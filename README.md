@@ -1,6 +1,6 @@
 ### MERN Fullstack Authentication
 
-**Berikut** adalah contoh implementasi **Real Wordl Authentication** menggunakan **React** dan **Nodejs** berikut  dengan kawan - kawanya, semoga dapat membantu teman - teman semua yang sedang belajar [demo disini](https://merncsa.herokuapp.com/signin).
+**Berikut** adalah contoh implementasi **Real Wordl Authentication** menggunakan **React** dan **Nodejs** berikut  dengan kawan - kawanya, semoga dengan adanya tutorial ini dapat membantu teman - teman semua yang sedang belajar [demo disini](https://merncsa.herokuapp.com/signin).
 
 #### Cara Menjalankan Aplikasi
 
