@@ -1,17 +1,17 @@
 exports.templateMailRegister = (name, to, token) => {
-	return {
-		from: 'fullstackcoding@stack.com',
-		to: to,
-		subject: 'Email Confirmation',
-		html: `
+    return {
+        from: 'fullstackcoding@stack.com',
+        to: to,
+        subject: 'Email Confirmation',
+        html: `
         <!DOCTYPE html>
         <html lang="en">
-        
+
         <head>
             <title>Tech Soft</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
             <style type="text/css">
                 html, body {
                     font-family: "Roboto Thin";
@@ -19,7 +19,7 @@ exports.templateMailRegister = (name, to, token) => {
                     margin: auto;
                     padding: auto;
                 }
-        
+
                 .container {
                     position: relative !important;
                     margin: auto !important;
@@ -28,14 +28,14 @@ exports.templateMailRegister = (name, to, token) => {
                     height: 650px;
                     border-radius: 10px;
                 }
-        
+
                 .container .card {
                     justify-content: center;
                     align-content: center;
                     position: relative;
                     top: 30px;
                 }
-        
+
                 .container .logo {
                     background: #07cd10;
                     width: 360px;
@@ -46,37 +46,37 @@ exports.templateMailRegister = (name, to, token) => {
                     text-align: center;
                     font-weight: bold;
                 }
-        
+
                 .logo h4 a {
-        
+
                     font-size: 22px;
                     text-align: center;
                     line-height: 40px;
                     color: #f5f5f5;
                     opacity: 1;
                 }
-        
+
                 .card-title {
                     font-size: 19px;
                     line-height: 30px;
                 }
-        
+
                 .card-subtitle {
                     font-size: 17px;
                 }
-        
-        
+
+
                 .list-accout {
                     font-size: 16px;
                     position: relative;
                     top: 20px;
                 }
-        
+
                 .button-spotify {
                     position: relative;
                     justify-content: center;
                 }
-        
+
                 a {
                     display: inline-block;
                     position: relative;
@@ -88,7 +88,7 @@ exports.templateMailRegister = (name, to, token) => {
                     box-shadow: none;
                     font-size: 15px;
                 }
-        
+
                 button {
                     width: 150px;
                     height: 50px;
@@ -101,16 +101,16 @@ exports.templateMailRegister = (name, to, token) => {
                     color: #f5f5f5;
                     opacity: 1;
                 }
-        
+
                 .text-content {
                     font-size: 16px;
                     word-wrap: break-word;
                     position: relative;
                     top: 55px;
                 }
-        
+
                 .footer-logo{
-        
+
                     background: #07cd10;
                     color: #f5f5f5;
                     width: 360px;
@@ -122,7 +122,7 @@ exports.templateMailRegister = (name, to, token) => {
                     top: 3vh;
                     font-weight: bold;
                 }
-        
+
                 .footer {
                     font-size: 17px;
                     line-height: 40px;
@@ -130,7 +130,7 @@ exports.templateMailRegister = (name, to, token) => {
                     opacity: 1;
                 }
             </style>
-        
+
         </head>
         <body>
         <div class="container">
@@ -144,7 +144,7 @@ exports.templateMailRegister = (name, to, token) => {
                     </p>
                 <div class="text-content">
                     <button>
-                      <a href="${process.env.CLIENT_URL}/activation/${token}">Activation Account</a>
+                      <a href="https://merncsa.herokuapp.com/activation/${token}">Activation Account</a>
                     </button>
                     <div class="footer-logo">
                         <span class="footer">&copy; 2020 FullStack Coding, Inc All Right Reserved</span>
@@ -154,6 +154,6 @@ exports.templateMailRegister = (name, to, token) => {
             </div>
           </body>
       </html>
-        `,
-	};
-};
+        `
+    }
+}
